@@ -1,14 +1,15 @@
 {
-  "name": "natours",
+  "name": "Authentication",
   "version": "1.0.0",
   "description": "learning node, express and mongoDB",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js",
-    "debug": "ndb server.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "start:prod": "cross-env NODE_ENV=production nodemon index.js",
+    "debug": "ndb index.js"
   },
-  "author": "mechack",
+  "author": "kaba-mechack",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -31,6 +32,8 @@
     "node": ">=10.0.0"
   },
   "devDependencies": {
-    "ndb": "^1.1.5"
+    "cross-env": "^7.0.3",
+    "ndb": "^1.1.5",
+    "nodemon": "^3.0.1"
   }
 }
